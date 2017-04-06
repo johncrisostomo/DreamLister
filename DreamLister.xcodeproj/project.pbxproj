@@ -23,6 +23,7 @@
 		1927BFD61E962F91009326B9 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */; };
 		1927BFDA1E967DCD009326B9 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1927BFD91E967DCD009326B9 /* tesla.jpg */; };
 		1927BFDD1E968156009326B9 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFDC1E968156009326B9 /* MaterialView.swift */; };
+		1927BFDF1E968544009326B9 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFDE1E968544009326B9 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1927BFD91E967DCD009326B9 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		1927BFDC1E968156009326B9 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		1927BFDE1E968544009326B9 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1927BFDC1E968156009326B9 /* MaterialView.swift */,
+				1927BFDE1E968544009326B9 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1927BFDF1E968544009326B9 /* ItemCell.swift in Sources */,
 				1927BFA31E962892009326B9 /* MainVC.swift in Sources */,
 				1927BFD11E962F91009326B9 /* Store+CoreDataClass.swift in Sources */,
 				1927BFD41E962F91009326B9 /* ItemType+CoreDataProperties.swift in Sources */,
