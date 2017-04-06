@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1927BFA11E962892009326B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFA01E962892009326B9 /* AppDelegate.swift */; };
-		1927BFA31E962892009326B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFA21E962892009326B9 /* ViewController.swift */; };
+		1927BFA31E962892009326B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFA21E962892009326B9 /* MainVC.swift */; };
 		1927BFA61E962892009326B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1927BFA41E962892009326B9 /* Main.storyboard */; };
 		1927BFA91E962892009326B9 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFA71E962892009326B9 /* DreamLister.xcdatamodeld */; };
 		1927BFAB1E962892009326B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927BFAA1E962892009326B9 /* Assets.xcassets */; };
@@ -21,12 +21,14 @@
 		1927BFD41E962F91009326B9 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCC1E962F91009326B9 /* ItemType+CoreDataProperties.swift */; };
 		1927BFD51E962F91009326B9 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCD1E962F91009326B9 /* Image+CoreDataClass.swift */; };
 		1927BFD61E962F91009326B9 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */; };
+		1927BFDA1E967DCD009326B9 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1927BFD91E967DCD009326B9 /* tesla.jpg */; };
+		1927BFDD1E968156009326B9 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFDC1E968156009326B9 /* MaterialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1927BF9D1E962892009326B9 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1927BFA01E962892009326B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1927BFA21E962892009326B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1927BFA21E962892009326B9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		1927BFA51E962892009326B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1927BFA81E962892009326B9 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		1927BFAA1E962892009326B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		1927BFCC1E962F91009326B9 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1927BFCD1E962F91009326B9 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1927BFD91E967DCD009326B9 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
+		1927BFDC1E968156009326B9 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +76,12 @@
 		1927BF9F1E962892009326B9 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				1927BFDB1E967E17009326B9 /* View */,
 				1927BFD71E9630B5009326B9 /* Model */,
 				1927BFA01E962892009326B9 /* AppDelegate.swift */,
-				1927BFA21E962892009326B9 /* ViewController.swift */,
+				1927BFA21E962892009326B9 /* MainVC.swift */,
 				1927BFA41E962892009326B9 /* Main.storyboard */,
+				1927BFD91E967DCD009326B9 /* tesla.jpg */,
 				1927BFAA1E962892009326B9 /* Assets.xcassets */,
 				1927BFAC1E962892009326B9 /* LaunchScreen.storyboard */,
 				1927BFAF1E962892009326B9 /* Info.plist */,
@@ -105,6 +111,14 @@
 				1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		1927BFDB1E967E17009326B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1927BFDC1E968156009326B9 /* MaterialView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1927BFAE1E962892009326B9 /* LaunchScreen.storyboard in Resources */,
+				1927BFDA1E967DCD009326B9 /* tesla.jpg in Resources */,
 				1927BFAB1E962892009326B9 /* Assets.xcassets in Resources */,
 				1927BFA61E962892009326B9 /* Main.storyboard in Resources */,
 			);
@@ -180,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1927BFA31E962892009326B9 /* ViewController.swift in Sources */,
+				1927BFA31E962892009326B9 /* MainVC.swift in Sources */,
 				1927BFD11E962F91009326B9 /* Store+CoreDataClass.swift in Sources */,
 				1927BFD41E962F91009326B9 /* ItemType+CoreDataProperties.swift in Sources */,
+				1927BFDD1E968156009326B9 /* MaterialView.swift in Sources */,
 				1927BFA11E962892009326B9 /* AppDelegate.swift in Sources */,
 				1927BFCF1E962F91009326B9 /* Item+CoreDataClass.swift in Sources */,
 				1927BFD31E962F91009326B9 /* ItemType+CoreDataClass.swift in Sources */,
