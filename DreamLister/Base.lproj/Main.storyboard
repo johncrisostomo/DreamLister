@@ -260,6 +260,12 @@
                     <navigationItem key="navigationItem" title="Add / Edit" id="wP4-AQ-ZPW">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Nfq-0T-Jtf"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="8dw-Ss-lQM" id="9Et-Sh-skH"/>
+                        <outlet property="priceField" destination="99S-Ta-0Nw" id="hPt-Vj-EHX"/>
+                        <outlet property="storePicker" destination="TIL-vX-xLh" id="RSk-1E-baV"/>
+                        <outlet property="titleField" destination="Mf0-tQ-Abp" id="JcT-Ip-UjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQ1-4t-mbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
