@@ -21,9 +21,10 @@
 		1927BFD41E962F91009326B9 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCC1E962F91009326B9 /* ItemType+CoreDataProperties.swift */; };
 		1927BFD51E962F91009326B9 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCD1E962F91009326B9 /* Image+CoreDataClass.swift */; };
 		1927BFD61E962F91009326B9 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */; };
-		1927BFDA1E967DCD009326B9 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1927BFD91E967DCD009326B9 /* tesla.jpg */; };
 		1927BFDD1E968156009326B9 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFDC1E968156009326B9 /* MaterialView.swift */; };
 		1927BFDF1E968544009326B9 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BFDE1E968544009326B9 /* ItemCell.swift */; };
+		19A05C6D1EA4F506002A381A /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A05C6C1EA4F506002A381A /* ItemDetailsVC.swift */; };
+		19A05C6F1EA4F96C002A381A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A05C6E1EA4F96C002A381A /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +44,10 @@
 		1927BFCC1E962F91009326B9 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1927BFCD1E962F91009326B9 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1927BFCE1E962F91009326B9 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1927BFD91E967DCD009326B9 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		1927BFDC1E968156009326B9 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		1927BFDE1E968544009326B9 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		19A05C6C1EA4F506002A381A /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		19A05C6E1EA4F96C002A381A /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +80,11 @@
 		1927BF9F1E962892009326B9 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
-				1927BFDB1E967E17009326B9 /* View */,
 				1927BFD71E9630B5009326B9 /* Model */,
+				1927BFDB1E967E17009326B9 /* View */,
+				19A05C6B1EA4F4C0002A381A /* Controller */,
 				1927BFA01E962892009326B9 /* AppDelegate.swift */,
-				1927BFA21E962892009326B9 /* MainVC.swift */,
 				1927BFA41E962892009326B9 /* Main.storyboard */,
-				1927BFD91E967DCD009326B9 /* tesla.jpg */,
 				1927BFAA1E962892009326B9 /* Assets.xcassets */,
 				1927BFAC1E962892009326B9 /* LaunchScreen.storyboard */,
 				1927BFAF1E962892009326B9 /* Info.plist */,
@@ -119,9 +120,19 @@
 			isa = PBXGroup;
 			children = (
 				1927BFDC1E968156009326B9 /* MaterialView.swift */,
+				19A05C6E1EA4F96C002A381A /* CustomTextField.swift */,
 				1927BFDE1E968544009326B9 /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		19A05C6B1EA4F4C0002A381A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1927BFA21E962892009326B9 /* MainVC.swift */,
+				19A05C6C1EA4F506002A381A /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1927BFAE1E962892009326B9 /* LaunchScreen.storyboard in Resources */,
-				1927BFDA1E967DCD009326B9 /* tesla.jpg in Resources */,
 				1927BFAB1E962892009326B9 /* Assets.xcassets in Resources */,
 				1927BFA61E962892009326B9 /* Main.storyboard in Resources */,
 			);
@@ -206,11 +216,13 @@
 				1927BFA11E962892009326B9 /* AppDelegate.swift in Sources */,
 				1927BFCF1E962F91009326B9 /* Item+CoreDataClass.swift in Sources */,
 				1927BFD31E962F91009326B9 /* ItemType+CoreDataClass.swift in Sources */,
+				19A05C6D1EA4F506002A381A /* ItemDetailsVC.swift in Sources */,
 				1927BFD21E962F91009326B9 /* Store+CoreDataProperties.swift in Sources */,
 				1927BFA91E962892009326B9 /* DreamLister.xcdatamodeld in Sources */,
 				1927BFD01E962F91009326B9 /* Item+CoreDataProperties.swift in Sources */,
 				1927BFD51E962F91009326B9 /* Image+CoreDataClass.swift in Sources */,
 				1927BFD61E962F91009326B9 /* Image+CoreDataProperties.swift in Sources */,
+				19A05C6F1EA4F96C002A381A /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
