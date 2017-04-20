@@ -19,6 +19,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var thumbImg: UIImageView!
     
     var stores = [Store]()
+    var itemTypes = [ItemType]()
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
 
@@ -33,9 +34,11 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
-        // generateStores()
+        generateStores()
+        generateItemTypes()
         
         getStores()
+        getItemTypes()
         
         if let topItem = self.navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -70,6 +73,14 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         do {
             self.stores = try context.fetch(fetchRequest)
             self.storePicker.reloadAllComponents()
+        } catch {}
+    }
+    
+    func getItemTypes() {
+        let fetchRequest: NSFetchRequest<ItemType> = ItemType.fetchRequest()
+        
+        do {
+            self.itemTypes = try context.fetch(fetchRequest)
         } catch {}
     }
     
@@ -161,6 +172,19 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         store5.name = "Amazon"
         let store6 = Store(context: context)
         store6.name = "Metro Colon"
+        
+        ad.saveContext()
+    }
+    
+    func generateItemTypes() {
+        let type = ItemType(context: context)
+        type.type = "Material"
+        
+        let type2 = ItemType(context: context)
+        type2.type = "Experience"
+        
+        let type3 = ItemType(context: context)
+        type3.type = "Food"
         
         ad.saveContext()
     }
