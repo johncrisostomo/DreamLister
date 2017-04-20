@@ -276,7 +276,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add / Edit" id="wP4-AQ-ZPW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Nfq-0T-Jtf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Nfq-0T-Jtf">
+                            <connections>
+                                <action selector="deletePressed:" destination="b88-xc-OVy" id="xdQ-kv-MXh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="8dw-Ss-lQM" id="9Et-Sh-skH"/>
